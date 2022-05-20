@@ -1,0 +1,26 @@
+<div 
+    class="mx-5 card taskContainer" 
+    [ngClass]="{redBackground:task.reminder}" 
+    (dblclick)="toggleTaskReminder(task)"
+    >
+
+    <div class="card-body row">
+        
+        <div class="col-8">
+            <h5 class="card-title">{{task.text}}</h5>
+            <p class="card-text">
+                {{task.time}}
+            </p>
+        </div>
+
+        <div class="col-4">
+            <app-button 
+                text="Delete" 
+                color="red" 
+                (btnClick)="deleteTask(task)"
+            >
+            </app-button>
+        </div>
+
+    </div>
+</div>

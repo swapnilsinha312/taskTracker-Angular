@@ -1,0 +1,25 @@
+<form *ngIf="showAddTask" (ngSubmit)="onSubmit()" action="" class="jumbotron card bg-dark text-white mx-10">
+    <h1 class='heading'>Create new Task</h1>
+    
+    <div class="m-10 p-3 container form-group border border-danger">
+        
+        <div class="my-4">
+            <label for='Name'>Task Name:</label>
+            <input [(ngModel)]="text" class="form-control" type="text" name="name" id="name" placeholder="Enter Name"/>
+        </div>
+        
+        <div class="my-4">
+            <label for='Dat'>Date and Time:</label>
+            <input [(ngModel)]="time" class="form-control" type="text" name="dateAndTime" id="dateAndTime" placeholder="Enter Date and Time"/>
+        </div>
+    
+        <div class="my-4" >
+            <label for='Name' style="padding-right: 10px;">Set Reminder:</label>
+            <input [(ngModel)]="reminder" type="checkbox" name="reminder" id="reminder"/>
+        </div>
+
+    </div>
+    <!-- {{text}} -->
+    <input type="submit" class="btn btn-danger" value="Save"/>
+
+</form>

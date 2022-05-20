@@ -1,0 +1,13 @@
+.taskContainer{
+    border-left-width: 8px;
+    /* border-right-width: 8px; */
+    margin: 2px;
+    border-left-style: double;
+    border-top-style: double;
+    border-color: green;
+
+}
+
+.redBackground{
+    border-color: red;
+}
